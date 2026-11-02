@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1220"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <g opacity="0.08" stroke="#06b6d4" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Window Frame -->
+  <rect x="40" y="35" width="720" height="380" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="40" y="35" width="720" height="42" rx="12" fill="#0f172a"/>
+  
+  <circle cx="65" cy="56" r="6" fill="#ef4444"/>
+  <circle cx="85" cy="56" r="6" fill="#f59e0b"/>
+  <circle cx="105" cy="56" r="6" fill="#10b981"/>
+  
+  <text x="135" y="61" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">Inai Trace — Field Force Tracking &amp; GPS Attendance QA</text>
+  
+  <rect x="625" y="47" width="115" height="20" rx="10" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1"/>
+  <circle cx="637" cy="57" r="3.5" fill="#06b6d4"/>
+  <text x="647" y="61" fill="#22d3ee" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">GPS &amp; WORKFLOWS</text>
+
+  <!-- Metrics -->
+  <g transform="translate(65, 95)">
+    <rect x="0" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Attendance Module</text>
+    <text x="16" y="50" fill="#00eeff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Geofenced</text>
+
+    <rect x="175" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="191" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Target Tracking</text>
+    <text x="191" y="50" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Daily/Monthly</text>
+
+    <rect x="350" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="366" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Order Punching</text>
+    <text x="366" y="50" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Real-Time</text>
+
+    <rect x="525" y="0" width="145" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="541" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Defect Retest</text>
+    <text x="541" y="50" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Verified ✓</text>
+  </g>
+
+  <!-- Modules Grid -->
+  <g transform="translate(65, 180)">
+    <rect x="0" y="0" width="670" height="210" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="28" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">Field Operations Testing Scope &amp; Deliverables</text>
+
+    <!-- Card 1: Attendance & Geofencing -->
+    <g transform="translate(20, 50)">
+      <rect x="0" y="0" width="305" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="25" cy="32" r="12" fill="#06b6d4" fill-opacity="0.2"/>
+      <text x="20" y="37" fill="#06b6d4" font-family="'Segoe UI', sans-serif" font-size="15">📍</text>
+      <text x="48" y="28" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">Attendance &amp; Check-In / Out</text>
+      <text x="48" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Validated selfie check-in, geofence radius &amp; offline mode</text>
+    </g>
+
+    <!-- Card 2: Visits & Route Planning -->
+    <g transform="translate(345, 50)">
+      <rect x="0" y="0" width="305" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="25" cy="32" r="12" fill="#3b82f6" fill-opacity="0.2"/>
+      <text x="20" y="37" fill="#3b82f6" font-family="'Segoe UI', sans-serif" font-size="15">🗺️</text>
+      <text x="48" y="28" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">Visits &amp; Daily Route Tracking</text>
+      <text x="48" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Tested customer stop duration and route discrepancy alerts</text>
+    </g>
+
+    <!-- Card 3: Target vs Achievement -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="0" width="305" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="25" cy="32" r="12" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="20" y="37" fill="#8b5cf6" font-family="'Segoe UI', sans-serif" font-size="15">🎯</text>
+      <text x="48" y="28" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">Target vs. Achievement Dashboard</text>
+      <text x="48" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Verified sales target calculations and team leader rollups</text>
+    </g>
+
+    <!-- Card 4: Orders & Approvals -->
+    <g transform="translate(345, 130)">
+      <rect x="0" y="0" width="305" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="25" cy="32" r="12" fill="#10b981" fill-opacity="0.2"/>
+      <text x="20" y="37" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="15">📦</text>
+      <text x="48" y="28" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">Order Punching &amp; Manager Approvals</text>
+      <text x="48" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Tested cart validation, pricing rules, and approval triggers</text>
+    </g>
+  </g>
+</svg>

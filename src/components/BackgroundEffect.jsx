@@ -7,18 +7,21 @@ const BackgroundEffect = () => {
   const particlesRef = useRef([]);
 
   const initParticles = useCallback((width, height) => {
-    const count = Math.min(Math.floor((width * height) / 12000), 120);
+    // QA Test Pipeline Nodes
+    const count = Math.min(Math.floor((width * height) / 14000), 90);
     const particles = [];
     for (let i = 0; i < count; i++) {
+      // 0: Cyan (functional/test), 1: Tech Blue (core/engine), 2: Emerald (verified/pass)
+      const type = Math.floor(Math.random() * 3);
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
-        radius: Math.random() * 2 + 0.5,
-        hue: Math.random() > 0.5 ? 185 : 275, // cyan or purple
-        opacity: Math.random() * 0.5 + 0.2,
-        pulseSpeed: Math.random() * 0.02 + 0.005,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        radius: Math.random() * 1.8 + 1,
+        type,
+        opacity: Math.random() * 0.5 + 0.25,
+        pulseSpeed: Math.random() * 0.02 + 0.008,
         pulsePhase: Math.random() * Math.PI * 2,
       });
     }
@@ -46,99 +49,99 @@ const BackgroundEffect = () => {
 
     let time = 0;
 
+    const getColor = (type, alpha) => {
+      if (type === 0) return `rgba(0, 238, 255, ${alpha})`; // Cyan
+      if (type === 1) return `rgba(56, 189, 248, ${alpha})`; // Sky blue
+      return `rgba(16, 185, 129, ${alpha})`; // QA Verified Emerald
+    };
+
     const animate = () => {
       time += 1;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       const particles = particlesRef.current;
       const mouse = mouseRef.current;
-      const connectionDistance = 150;
-      const mouseInfluence = 200;
+      const connectionDistance = 140;
+      const mouseInfluence = 180;
 
-      // Update & draw particles
+      // Update & draw QA test nodes
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
 
-        // Mouse repulsion
+        // Soft mouse influence
         const dx = p.x - mouse.x;
         const dy = p.y - mouse.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < mouseInfluence && dist > 0) {
           const force = (mouseInfluence - dist) / mouseInfluence;
-          p.vx += (dx / dist) * force * 0.15;
-          p.vy += (dy / dist) * force * 0.15;
+          p.vx += (dx / dist) * force * 0.12;
+          p.vy += (dy / dist) * force * 0.12;
         }
 
-        // Apply velocity with damping
-        p.vx *= 0.98;
-        p.vy *= 0.98;
+        p.vx *= 0.985;
+        p.vy *= 0.985;
         p.x += p.vx;
         p.y += p.vy;
 
-        // Wrap around edges
         if (p.x < 0) p.x = canvas.width;
         if (p.x > canvas.width) p.x = 0;
         if (p.y < 0) p.y = canvas.height;
         if (p.y > canvas.height) p.y = 0;
 
-        // Pulsing opacity
-        const pulse = Math.sin(time * p.pulseSpeed + p.pulsePhase) * 0.3 + 0.7;
+        const pulse = Math.sin(time * p.pulseSpeed + p.pulsePhase) * 0.35 + 0.65;
         const alpha = p.opacity * pulse;
 
-        // Draw particle with glow
+        // Draw node
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle =
-          p.hue === 185
-            ? `rgba(0, 238, 255, ${alpha})`
-            : `rgba(154, 0, 255, ${alpha})`;
-        ctx.shadowColor =
-          p.hue === 185
-            ? `rgba(0, 238, 255, ${alpha * 0.8})`
-            : `rgba(154, 0, 255, ${alpha * 0.8})`;
-        ctx.shadowBlur = 8;
+        ctx.fillStyle = getColor(p.type, alpha);
+        ctx.shadowColor = getColor(p.type, alpha * 0.7);
+        ctx.shadowBlur = 6;
         ctx.fill();
         ctx.shadowBlur = 0;
 
-        // Draw connections
+        // Draw connections between test nodes
         for (let j = i + 1; j < particles.length; j++) {
           const p2 = particles[j];
           const cdx = p.x - p2.x;
           const cdy = p.y - p2.y;
           const cdist = Math.sqrt(cdx * cdx + cdy * cdy);
           if (cdist < connectionDistance) {
-            const lineAlpha = (1 - cdist / connectionDistance) * 0.15;
+            const lineAlpha = (1 - cdist / connectionDistance) * 0.14;
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(0, 238, 255, ${lineAlpha})`;
-            ctx.lineWidth = 0.5;
+            ctx.strokeStyle = `rgba(56, 189, 248, ${lineAlpha})`;
+            ctx.lineWidth = 0.6;
             ctx.stroke();
+
+            // Occasional test packet pulse traversing the line
+            if ((i + j + Math.floor(time * 0.05)) % 45 === 0) {
+              const progress = ((time * 0.02) % 1);
+              const px = p.x + (p2.x - p.x) * progress;
+              const py = p.y + (p2.y - p.y) * progress;
+              ctx.beginPath();
+              ctx.arc(px, py, 1.5, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(0, 238, 255, 0.8)';
+              ctx.fill();
+            }
           }
         }
       }
 
-      // Draw mouse connection lines to nearby particles
+      // Draw mouse connection lines to nearby test nodes
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         const dx = p.x - mouse.x;
         const dy = p.y - mouse.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < mouseInfluence) {
-          const alpha = (1 - dist / mouseInfluence) * 0.3;
+          const alpha = (1 - dist / mouseInfluence) * 0.25;
           ctx.beginPath();
           ctx.moveTo(mouse.x, mouse.y);
           ctx.lineTo(p.x, p.y);
-          const gradient = ctx.createLinearGradient(
-            mouse.x,
-            mouse.y,
-            p.x,
-            p.y
-          );
-          gradient.addColorStop(0, `rgba(0, 238, 255, ${alpha})`);
-          gradient.addColorStop(1, `rgba(154, 0, 255, ${alpha * 0.5})`);
-          ctx.strokeStyle = gradient;
-          ctx.lineWidth = 0.8;
+          ctx.strokeStyle = `rgba(0, 238, 255, ${alpha})`;
+          ctx.lineWidth = 0.7;
           ctx.stroke();
         }
       }
@@ -157,21 +160,21 @@ const BackgroundEffect = () => {
 
   return (
     <div className="bg-effect-wrapper" aria-hidden="true">
-      {/* Canvas particle layer */}
+      {/* Canvas particle / test node layer */}
       <canvas ref={canvasRef} className="bg-particles-canvas" />
 
-      {/* Floating aurora orbs */}
+      {/* Corporate tech ambient orbs (Deep Slate, Cyan & QA Emerald) */}
       <div className="bg-aurora-layer">
-        <div className="aurora-orb aurora-orb-1"></div>
-        <div className="aurora-orb aurora-orb-2"></div>
-        <div className="aurora-orb aurora-orb-3"></div>
-        <div className="aurora-orb aurora-orb-4"></div>
+        <div className="aurora-orb qa-orb-1"></div>
+        <div className="aurora-orb qa-orb-2"></div>
+        <div className="aurora-orb qa-orb-3"></div>
+        <div className="aurora-orb qa-orb-4"></div>
       </div>
 
-      {/* Subtle animated grid overlay */}
+      {/* Engineering Blueprint Grid */}
       <div className="bg-grid-overlay"></div>
 
-      {/* Top and bottom vignette for depth */}
+      {/* Edge vignette for professional depth */}
       <div className="bg-vignette"></div>
     </div>
   );

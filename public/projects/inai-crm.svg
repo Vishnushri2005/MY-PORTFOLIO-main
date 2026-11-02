@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#050a17"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00eeff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <g opacity="0.08" stroke="#00eeff" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Window Container -->
+  <rect x="40" y="35" width="720" height="380" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="40" y="35" width="720" height="42" rx="12" fill="#0f172a"/>
+  
+  <circle cx="65" cy="56" r="6" fill="#ef4444"/>
+  <circle cx="85" cy="56" r="6" fill="#f59e0b"/>
+  <circle cx="105" cy="56" r="6" fill="#10b981"/>
+  
+  <text x="135" y="61" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">Inai CRM — Workflow Validation &amp; Access Hierarchy QA</text>
+  
+  <rect x="625" y="47" width="115" height="20" rx="10" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+  <circle cx="637" cy="57" r="3.5" fill="#3b82f6"/>
+  <text x="647" y="61" fill="#60a5fa" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">RBAC VERIFIED</text>
+
+  <!-- Metrics -->
+  <g transform="translate(65, 95)">
+    <rect x="0" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Pipeline Stages</text>
+    <text x="16" y="50" fill="#00eeff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">5 Modules</text>
+
+    <rect x="175" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="191" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">User Roles</text>
+    <text x="191" y="50" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Admin/Rep</text>
+
+    <rect x="350" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="366" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Quotations Flow</text>
+    <text x="366" y="50" fill="#818cf8" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Validated</text>
+
+    <rect x="525" y="0" width="145" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="541" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Regression Runs</text>
+    <text x="541" y="50" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">100% Pass</text>
+  </g>
+
+  <!-- Flowchart / Testing Steps -->
+  <g transform="translate(65, 180)">
+    <rect x="0" y="0" width="670" height="210" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="28" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">End-to-End Quotation &amp; Approval Life Cycle Testing</text>
+
+    <!-- Node 1: Leads -->
+    <g transform="translate(25, 60)">
+      <rect x="0" y="0" width="125" height="90" rx="8" fill="#1e293b" stroke="#00eeff" stroke-width="1.5"/>
+      <text x="12" y="26" fill="#00eeff" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">1. Leads Module</text>
+      <text x="12" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Lead Creation</text>
+      <text x="12" y="64" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Field Validation</text>
+      <text x="12" y="80" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">✓ Tested &amp; Logged</text>
+    </g>
+
+    <line x1="155" y1="105" x2="185" y2="105" stroke="#00eeff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Node 2: Customers & Sales -->
+    <g transform="translate(190, 60)">
+      <rect x="0" y="0" width="130" height="90" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="12" y="26" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">2. Customer Convert</text>
+      <text x="12" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Data Integrity</text>
+      <text x="12" y="64" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Opportunity Match</text>
+      <text x="12" y="80" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">✓ Verified</text>
+    </g>
+
+    <!-- Node 3: Quotation -->
+    <g transform="translate(355, 60)">
+      <rect x="0" y="0" width="130" height="90" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+      <text x="12" y="26" fill="#818cf8" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">3. Quotations</text>
+      <text x="12" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Discount Calculation</text>
+      <text x="12" y="64" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Tax Computations</text>
+      <text x="12" y="80" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">✓ 100% Accurate</text>
+    </g>
+
+    <!-- Node 4: Approval Hierarchy -->
+    <g transform="translate(520, 60)">
+      <rect x="0" y="0" width="125" height="90" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+      <text x="12" y="26" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">4. Multi-Level RBAC</text>
+      <text x="12" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Hierarchy Access</text>
+      <text x="12" y="64" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Approval Gateways</text>
+      <text x="12" y="80" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">✓ Sign-off Complete</text>
+    </g>
+
+    <text x="25" y="180" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11">✓ Role-Based Access Control tested across Sales Executives, Managers, and System Admins</text>
+  </g>
+</svg>

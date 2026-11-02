@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1324"/>
+      <stop offset="100%" stop-color="#040812"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00eeff"/>
+      <stop offset="100%" stop-color="#00a8ff"/>
+    </linearGradient>
+    <linearGradient id="passGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.08" stroke="#00eeff" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Window Header / Frame -->
+  <rect x="40" y="35" width="720" height="380" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="40" y="35" width="720" height="42" rx="12" fill="#0f172a"/>
+  
+  <!-- Window Controls -->
+  <circle cx="65" cy="56" r="6" fill="#ef4444"/>
+  <circle cx="85" cy="56" r="6" fill="#f59e0b"/>
+  <circle cx="105" cy="56" r="6" fill="#10b981"/>
+  
+  <text x="135" y="61" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">Aqua World QA Suite — Billing &amp; Inventory Test Execution</text>
+  
+  <!-- Status Badge -->
+  <rect x="635" y="47" width="105" height="20" rx="10" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+  <circle cx="647" cy="57" r="3.5" fill="#10b981"/>
+  <text x="657" y="61" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">TEST PASS: 98%</text>
+
+  <!-- Top Metrics Bar -->
+  <g transform="translate(65, 95)">
+    <!-- Metric 1 -->
+    <rect x="0" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Modules Tested</text>
+    <text x="16" y="50" fill="#00eeff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">4 Core</text>
+
+    <!-- Metric 2 -->
+    <rect x="175" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="191" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Test Scenarios</text>
+    <text x="191" y="50" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">65+ Done</text>
+
+    <!-- Metric 3 -->
+    <rect x="350" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="366" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Defects Logged</text>
+    <text x="366" y="50" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">18 Resolved</text>
+
+    <!-- Metric 4 -->
+    <rect x="525" y="0" width="145" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="541" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Inventory Sync</text>
+    <text x="541" y="50" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Verified ✓</text>
+  </g>
+
+  <!-- Module Verification Matrix -->
+  <g transform="translate(65, 180)">
+    <rect x="0" y="0" width="410" height="210" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="28" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">Module Verification Matrix</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(20, 48)">
+      <rect x="0" y="0" width="370" height="32" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+      <circle cx="16" cy="16" r="5" fill="#10b981"/>
+      <text x="32" y="20" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="500">Stock Summary &amp; Consolidated Report</text>
+      <text x="315" y="20" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">PASSED</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 88)">
+      <rect x="0" y="0" width="370" height="32" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+      <circle cx="16" cy="16" r="5" fill="#10b981"/>
+      <text x="32" y="20" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="500">Stock Transfer &amp; In-Transit Validation</text>
+      <text x="315" y="20" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">PASSED</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(20, 128)">
+      <rect x="0" y="0" width="370" height="32" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+      <circle cx="16" cy="16" r="5" fill="#10b981"/>
+      <text x="32" y="20" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="500">Min. Stock Alert &amp; Calculation Accuracy</text>
+      <text x="315" y="20" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">PASSED</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(20, 168)">
+      <rect x="0" y="0" width="370" height="32" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+      <circle cx="16" cy="16" r="5" fill="#10b981"/>
+      <text x="32" y="20" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="500">Packing &amp; Unit Conversion Workflows</text>
+      <text x="315" y="20" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">PASSED</text>
+    </g>
+  </g>
+
+  <!-- Right Chart Panel -->
+  <g transform="translate(495, 180)">
+    <rect x="0" y="0" width="240" height="210" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1"/>
+    <text x="18" y="28" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">Test Execution Breakdown</text>
+
+    <!-- Bar 1 -->
+    <text x="18" y="60" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Functional Tests (100%)</text>
+    <rect x="18" y="68" width="200" height="10" rx="5" fill="#1e293b"/>
+    <rect x="18" y="68" width="200" height="10" rx="5" fill="url(#passGrad)"/>
+
+    <!-- Bar 2 -->
+    <text x="18" y="102" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Regression Testing (94%)</text>
+    <rect x="18" y="110" width="200" height="10" rx="5" fill="#1e293b"/>
+    <rect x="18" y="110" width="188" height="10" rx="5" fill="url(#accentGrad)"/>
+
+    <!-- Bar 3 -->
+    <text x="18" y="144" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Boundary Value Analysis (96%)</text>
+    <rect x="18" y="152" width="200" height="10" rx="5" fill="#1e293b"/>
+    <rect x="18" y="152" width="192" height="10" rx="5" fill="#38bdf8"/>
+
+    <text x="18" y="188" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="10">Branch-wise Multi-Location Sync Verified</text>
+  </g>
+</svg>

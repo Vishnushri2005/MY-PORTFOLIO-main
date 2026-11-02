@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1224"/>
+      <stop offset="100%" stop-color="#030814"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <g opacity="0.08" stroke="#00eeff" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Window Frame -->
+  <rect x="40" y="35" width="720" height="380" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="40" y="35" width="720" height="42" rx="12" fill="#0f172a"/>
+  
+  <circle cx="65" cy="56" r="6" fill="#ef4444"/>
+  <circle cx="85" cy="56" r="6" fill="#f59e0b"/>
+  <circle cx="105" cy="56" r="6" fill="#10b981"/>
+  
+  <text x="135" y="61" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">Inai Response — IT Service Management &amp; SLA Workflow Testing</text>
+  
+  <rect x="625" y="47" width="115" height="20" rx="10" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+  <circle cx="637" cy="57" r="3.5" fill="#10b981"/>
+  <text x="647" y="61" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">SLA VALIDATED</text>
+
+  <!-- Metrics -->
+  <g transform="translate(65, 95)">
+    <rect x="0" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Tickets Tested</text>
+    <text x="16" y="50" fill="#00eeff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Priority L1-L4</text>
+
+    <rect x="175" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="191" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Admin Setup</text>
+    <text x="191" y="50" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Users/Roles</text>
+
+    <rect x="350" y="0" width="155" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="366" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">SLA Escalation</text>
+    <text x="366" y="50" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">100% On-Time</text>
+
+    <rect x="525" y="0" width="145" height="65" rx="8" fill="#1e293b" fill-opacity="0.7" stroke="#334155" stroke-width="1"/>
+    <text x="541" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="500">Bug Fix Rate</text>
+    <text x="541" y="50" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800">Verified ✓</text>
+  </g>
+
+  <!-- Ticket Queue & SLA Matrix -->
+  <g transform="translate(65, 180)">
+    <rect x="0" y="0" width="670" height="210" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="28" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">Ticket Lifecycle &amp; Admin Configuration Testing</text>
+
+    <!-- Queue Row 1 -->
+    <g transform="translate(20, 48)">
+      <rect x="0" y="0" width="630" height="34" rx="6" fill="#1e293b" fill-opacity="0.6"/>
+      <rect x="12" y="8" width="65" height="18" rx="4" fill="#ef4444" fill-opacity="0.2"/>
+      <text x="20" y="21" fill="#f87171" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">URGENT</text>
+      <text x="90" y="22" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="600">Ticket Creation &amp; Auto-Assignment Hierarchy</text>
+      <text x="440" y="22" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">SLA: 2 Hours</text>
+      <text x="560" y="22" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700">✓ VERIFIED</text>
+    </g>
+
+    <!-- Queue Row 2 -->
+    <g transform="translate(20, 92)">
+      <rect x="0" y="0" width="630" height="34" rx="6" fill="#1e293b" fill-opacity="0.6"/>
+      <rect x="12" y="8" width="65" height="18" rx="4" fill="#f59e0b" fill-opacity="0.2"/>
+      <text x="26" y="21" fill="#fbbf24" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">HIGH</text>
+      <text x="90" y="22" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="600">Parent-Child Ticket Linking &amp; Dependency Handling</text>
+      <text x="440" y="22" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">SLA: 8 Hours</text>
+      <text x="560" y="22" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700">✓ VERIFIED</text>
+    </g>
+
+    <!-- Queue Row 3 -->
+    <g transform="translate(20, 136)">
+      <rect x="0" y="0" width="630" height="34" rx="6" fill="#1e293b" fill-opacity="0.6"/>
+      <rect x="12" y="8" width="65" height="18" rx="4" fill="#3b82f6" fill-opacity="0.2"/>
+      <text x="18" y="21" fill="#60a5fa" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">MEDIUM</text>
+      <text x="90" y="22" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="600">Admin Setup: Users, Teams, Permissions &amp; Email Triggers</text>
+      <text x="440" y="22" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">SLA: 24 Hours</text>
+      <text x="560" y="22" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700">✓ VERIFIED</text>
+    </g>
+
+    <text x="20" y="195" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11">✓ Multi-department ticket routing, SLA breach notifications, and resolution states validated</text>
+  </g>
+</svg>
