@@ -21,35 +21,35 @@ const Home = () => {
 
   return (
     <section className="home" id="home">
-        <motion.div 
-          className="home-content"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-            <h3>Hello, It's Me</h3>
-            <h1>Vishnu Shri Mohanraj</h1>
-            <h3>And I'm a <span ref={el}></span></h3>
-            <p>I'm a detail-oriented Software Testing Engineer with knowledge of Manual Testing and experience in testing web-based applications. Skilled in test case preparation, functional testing, bug identification, and defect reporting. Familiar with Playwright automation using TypeScript and SQL, with a focus on improving application quality.
-            </p>
-            <div style={{ marginTop: '30px' }}>
-              <a href="#contact" className="btn-box">Hire Me</a>
-              <a href="#projects" className="btn-box btn-outline" style={{ marginLeft: '15px' }}>My Projects</a>
-            </div>
-        </motion.div>
-        
-        <motion.div 
-          className="profile"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-            <div className="profile-container">
-                <div className="profile-image">
-                    <img src="/profile.jpg" alt="Profile Photo"/>
-                </div>
-            </div>
-        </motion.div>
+      <motion.div
+        className="home-content"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h3>Hello, It's Me</h3>
+        <h1>Vishnu Shri Mohanraj</h1>
+        <h3>And I'm a <span ref={el}></span></h3>
+        <p>I'm a detail-oriented Software Testing Engineer with knowledge of Manual Testing and experience in testing web-based applications. Skilled in test case preparation, functional testing, bug identification, and defect reporting. Familiar with Playwright automation using TypeScript and SQL, with a focus on improving application quality.
+        </p>
+        <div style={{ marginTop: '30px' }}>
+          <a href="#contact" className="btn-box">Hire Me</a>
+          <a href="#projects" className="btn-box btn-outline" style={{ marginLeft: '15px' }}>My Projects</a>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="profile"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <div className="profile-container">
+          <div className="profile-image">
+            <img src="/VS.jpeg" alt="Vishnu Shri Mohanraj" />
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
