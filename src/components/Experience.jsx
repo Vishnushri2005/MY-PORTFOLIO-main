@@ -21,15 +21,15 @@ const Experience = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="glass-card timeline-content">
-            <h3>Java Full Stack Developer Intern</h3>
-            <h4>Dev Technology Solutions</h4>
-            <p><strong>Salem, Tamil Nadu | Jun 2025 - Jul 2025</strong></p>
+            <h3>Software Testing Intern</h3>
+            <h4>Techiedoods Solution Private Limited</h4>
+            <p><strong>August 2026 – November 2026</strong></p>
             <ul style={{ marginTop: '15px', paddingLeft: '20px', color: '#ddd' }}>
-              <li>Developed responsive UI using HTML5, CSS3, JavaScript, and React JS.</li>
-              <li>Built RESTful APIs using Java, Spring Boot, and Spring MVC for backend logic and CRUD operations.</li>
-              <li>Integrated React frontend with Spring Boot backend through API integration.</li>
-              <li>Applied JWT authentication, authorization, and Spring Security concepts.</li>
-              <li>Tested APIs with Postman and managed code using Git and GitHub.</li>
+              <li>Analyzed application modules and tested functionalities across CRM, Trace, Aqua World, and Ticketing applications.</li>
+              <li>Prepared and executed test scenarios and test cases based on application requirements.</li>
+              <li>Performed functional testing, identified bugs, and documented defects with reproduction steps.</li>
+              <li>Tested existing features, identified UI issues, and suggested application enhancements.</li>
+              <li>Performed retesting and verified bug fixes; practiced automation testing using Playwright with TypeScript.</li>
             </ul>
           </div>
         </motion.div>
@@ -45,8 +45,9 @@ const Experience = () => {
             <h4>Excerpt Technology Pvt. Ltd.</h4>
             <p><strong>Bangalore, Karnataka</strong></p>
             <ul style={{ marginTop: '15px', paddingLeft: '20px', color: '#ddd' }}>
-              <li>Created responsive web pages using HTML and CSS.</li>
-              <li>Assisted in frontend development and UI improvements.</li>
+              <li>Developed responsive web pages using HTML5, CSS3, and JavaScript for user-friendly interfaces.</li>
+              <li>Collaborated with team members to implement designs and maintain responsive layouts across devices.</li>
+              <li>Improved webpage layouts, fixed UI issues, and ensured consistent design standards.</li>
             </ul>
           </div>
         </motion.div>

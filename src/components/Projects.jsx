@@ -20,18 +20,15 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>Healtrack</h3>
+          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>Aqua World – Billing & Inventory Management</h3>
           <p style={{ marginBottom: '15px', color: '#ccc' }}>
-            Next-Generation Smart Healthcare Ecosystem: An AI-Driven Framework for Real-Time Resource Optimization and MDR Risk Mitigation. 
-            Built a production-style full-stack hospital management web application with patient booking and token-based queue management.
+            Tested a billing and inventory management application covering Stock Summary, Consolidated Report, Stock Transfer, and Stock in Transit modules. Validated stock calculations, minimum stock levels, branch-wise inventory, and packing/conversion workflows.
           </p>
           <div>
-            <span className="skill-tag">React.js</span>
-            <span className="skill-tag">Spring Boot</span>
-            <span className="skill-tag">MySQL</span>
-            <span className="skill-tag">JPA</span>
-            <span className="skill-tag">JWT</span>
-            <span className="skill-tag">REST APIs</span>
+            <span className="skill-tag">Manual Testing</span>
+            <span className="skill-tag">Functional Testing</span>
+            <span className="skill-tag">Bug Reporting</span>
+            <span className="skill-tag">Test Case Execution</span>
           </div>
         </motion.div>
 
@@ -41,14 +38,15 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>Plasma Pyrolysis of Plastics</h3>
+          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>Inai CRM – Customer Relationship Management</h3>
           <p style={{ marginBottom: '15px', color: '#ccc' }}>
-            Designed a zero-emission system to convert plastic waste into usable energy through plasma pyrolysis, promoting sustainable and eco-friendly waste management.
-            Awarded First Prize in UPI Fraud Detection Paper Presentation for related research.
+            Tested Leads, Customers, Sales, Quotations, and Approval modules. Validated role-based access, quotation approval hierarchy, and user permissions. Reported functional defects and suggested workflow improvements.
           </p>
           <div>
-            <span className="skill-tag">Research</span>
-            <span className="skill-tag">Sustainability</span>
+            <span className="skill-tag">Manual Testing</span>
+            <span className="skill-tag">Role-Based Access Testing</span>
+            <span className="skill-tag">Defect Reporting</span>
+            <span className="skill-tag">Regression Testing</span>
           </div>
         </motion.div>
 
@@ -58,15 +56,33 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>TO DO LIST</h3>
+          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>Inai Trace – Field Force Tracking</h3>
           <p style={{ marginBottom: '15px', color: '#ccc' }}>
-            A simple web application that helps users add, manage, and delete daily tasks, making it easier to organize and track activities.
+            Tested Attendance, Targets, Visits, Orders, Approvals, and Employee Management modules. Validated attendance workflows, approval processes, and employee activity monitoring. Documented bugs and verified fixes.
           </p>
           <div>
-            <span className="skill-tag">HTML</span>
-            <span className="skill-tag">CSS</span>
-            <span className="skill-tag">JavaScript</span>
-            <span className="skill-tag">MySQL</span>
+            <span className="skill-tag">Functional Testing</span>
+            <span className="skill-tag">Workflow Validation</span>
+            <span className="skill-tag">Bug Verification</span>
+            <span className="skill-tag">Retesting</span>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          className="glass-card"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <h3 style={{ color: '#00eeff', marginBottom: '10px', fontSize: '22px' }}>Inai Response – IT Service Management & Ticketing</h3>
+          <p style={{ marginBottom: '15px', color: '#ccc' }}>
+            Tested ticket creation, assignment, linking, and status management functionalities. Explored Admin Setup including Users, Roles, Teams, and Settings. Validated SLA workflows, identified bugs, and verified fixes.
+          </p>
+          <div>
+            <span className="skill-tag">Manual Testing</span>
+            <span className="skill-tag">SLA Validation</span>
+            <span className="skill-tag">Admin Setup Testing</span>
+            <span className="skill-tag">Bug Documentation</span>
           </div>
         </motion.div>
       </div>

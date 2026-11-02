@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Java Full Stack Developer", "Web Designer", "Backend Engineer"],
+      strings: ["Software Testing Engineer", "Manual Testing Specialist", "QA Engineer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
@@ -30,7 +30,7 @@ const Home = () => {
             <h3>Hello, It's Me</h3>
             <h1>Vishnu Shri Mohanraj</h1>
             <h3>And I'm a <span ref={el}></span></h3>
-            <p>I'm a motivated and detail-oriented Java Full Stack Developer with knowledge of Java, Spring Boot, REST APIs, and database management. I have a strong foundation in software development principles and enjoy creating reliable and scalable applications.
+            <p>I'm a detail-oriented Software Testing Engineer with knowledge of Manual Testing and experience in testing web-based applications. Skilled in test case preparation, functional testing, bug identification, and defect reporting. Familiar with Playwright automation using TypeScript and SQL, with a focus on improving application quality.
             </p>
             <div style={{ marginTop: '30px' }}>
               <a href="#contact" className="btn-box">Hire Me</a>
